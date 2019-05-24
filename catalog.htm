@@ -32,18 +32,65 @@
 	<main class="container">
 		<h1 class="page-tittle"> Магазин готовых шаблонов </h1>
 		<section class="Filters">
-			<h2 class="vissually-hidden"> Фильтр товаров</h2>
+			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Сетка:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave">
+							<label for="filter-shave">Адаптивная</label>
+						<li class="filter-option">
+							Адаптивная
+						</li>
+						<li class="filter-option">
+							Фиксированная
+						</li>
+						<li class="filter-option">
+							Резиновая
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" id="filter-Слайдер" checked>
+							<label for="filter-Слайдер">Слайдер</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок-преимуществ" id="filter-Блок-преимуществ">
+							<label for="filter-Блок-преимуществ">Блок преимуществ</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" id="filter-Новости" checked>
+							<label for="filter-Новости">Новости</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея" id="filter-Галерея">
+							<label for="filter-Галерея">Галерея</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Корзина" id="filter-Корзина">
+							<label for="filter-Корзина">Корзина</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" class="filter-button button">
+					Показать
+				</button>
+			</form>
 		</section>
 		<!--Здесь форма-->
 		<section class="catalog">
 			<h2 class="vissually-hidden"> Примеры сайтов </h2>
 			<ul class='catalog-list'>
 				<li class="catalog-site">
-					<h3>
-						<a href="catalog-site.html">Sedona</a>
-					</h3>
-					<p class="site-description"> Информационный сайт для туристов </p>
 					<a href="catalog-site.html">
+						<h3>
+							<span class="catalog-category">Sedona</span>
+							<span class="catalog-site.html"> Sedona</span> </h3>
+						<p class="site-description"> Информационный сайт для туристов </p>
 						<img src="img/sedona.jpg" width="200" height="200" alt="Sedona «Информационный сайт для туристов»">
 					</a>
 					<p class="catalog-site-price">
@@ -51,11 +98,11 @@
 					</p>
 				</li>
 				<li class="catalog-site">
-					<h3>
-						<a href="catalog-site.html">PINK APP </a>
-					</h3>
-					<p class="site-description">Продуктовый лендинг приложения для iOS и Android</p>
 					<a href="catalog-site.html">
+						<h3>
+							<span class="catalog-category">PINK APP</span>
+							<span class="catalog-site.html"> PINK APP</span> </h3>
+						<p class="site-description">Продуктовый лендинг приложения для iOS и Android</p>
 						<img src="img/pink.jpg" width="200" height="200" alt="PINK APP «Продуктовый лендинг приложения для iOS и Android»">
 					</a>
 					<p class="catalog-site-price">
@@ -63,45 +110,49 @@
 					</p>
 				</li>
 				<li class="catalog-site">
-					<h3>
-						<a href="catalog-site.html">BORODINSKI </a>
-					</h3>
-					<p class="site-description"> Сайт салона красоты. Для мужчин, да </p>
 					<a href="catalog-site.html">
-						<img src="img/barbershop.jpg" width="200" height="200" alt="BORODINSKI «Сайт салона красоты. Для мужчин, да»"> </a>
+						<h3>
+							<span class="catalog-category">BORODINSKI</span>
+							<span class="catalog-site.html"> BORODINSKI</span> </h3>
+						<p class="site-description"> Сайт салона красоты. Для мужчин, да </p>
+						<img src="img/barbershop.jpg" width="200" height="200" alt="BORODINSKI «Сайт салона красоты. Для мужчин, да»">
+					</a>
 					<p class="catalog-site-price">
 						<a class="button" href=#>9 900 РУБ.</a>
 					</p>
 				</li>
 				<li class="catalog-site">
-					<h3>
-						<a href="catalog-site.html"> Mishka</a>
-					</h3>
-					<p class="site-description">Интернет-магазин вязанных игрушек</p>
 					<a href="catalog-site.html">
-						<img src="img/mishka.jpg" width="200" height="200" alt="Mishka «Интернет-магазин вязанных игрушек»"> </a>
+						<h3>
+							<span class="catalog-category">Mishka</span>
+							<span class="catalog-site.html"> Mishka</span> </h3>
+						<p class="site-description">Интернет-магазин вязанных игрушек</p>
+						<img src="img/mishka.jpg" width="200" height="200" alt="Mishka «Интернет-магазин вязанных игрушек»">
+					</a>
 					<p class="catalog-site-price">
 						<a class="button" href=#>9 900 РУБ.</a>
 					</p>
 				</li>
 				<li class="catalog-site">
-					<h3>
-						<a href="catalog-site.html"> A PLUS</a>
-					</h3>
-					<p class="site-description">Лендинг курсов повышения квалификации</p>
 					<a href="catalog-site.html">
-						<img src="img/aplus.jpg" width="200" height="200" alt="A PLUS «Лендинг курсов повышения квалификации»"> </a>
+						<h3>
+							<span class="catalog-category">A PLUS</span>
+							<span class="catalog-site.html"> A PLUS</span> </h3>
+						<p class="site-description">Лендинг курсов повышения квалификации</p>
+						<img src="img/aplus.jpg" width="200" height="200" alt="A PLUS «Лендинг курсов повышения квалификации»">
+					</a>
 					<p class="catalog-site-price">
 						<a class="button" href=#>9 900 РУБ.</a>
 					</p>
 				</li>
 				<li class="catalog-site">
-					<h3>
-						<a href="catalog-site.html">Кваст</a>
-					</h3>
-					<p class="site-description">Промо-сайт производителя крафтового кваса</p>
 					<a href="catalog-site.html">
-						<img src="img/kvast.jpg" width="200" height="200" alt="Кваст «Промо-сайт производителя крафтового кваса»"></a>
+						<h3>
+							<span class="catalog-category">Кваст</span>
+							<span class="catalog-site.html"> Кваст</span> </h3>
+						<p class="site-description">Промо-сайт производителя крафтового кваса</p>
+						<img src="img/kvast.jpg" width="200" height="200" alt="Кваст «Промо-сайт производителя крафтового кваса»">
+					</a>
 					<p class="catalog-site-price">
 						<a class="button" href=#>9 900 РУБ.</a>
 					</p>
@@ -120,6 +171,24 @@
 			</ul>
 		</section>
 	</main>
+	<section class="appointment">
+		<h2>Напишите нам</h2>
+		<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="appointment-item">
+				<label for="appointment-name">Ваше имя:</label>
+				<input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+			</p>
+			<p class="appointment-item">
+				<label for="appointment-email">Ваш e-mail:</label>
+				<input id="appointment-email" type="text" name="email" value="" placeholder="email@example.com">
+			</p>
+			<p class="appointment-item">
+				<label for="appointment-text">Текст письма::</label>
+				<input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+	</section>
 	<footer class="main-footer">
 		<ul class="footer-social">
 			<li>
